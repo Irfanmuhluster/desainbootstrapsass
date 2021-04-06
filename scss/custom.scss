@@ -118,3 +118,10 @@ body {
     overflow: visible;
     box-shadow: $box-shadow-sm;
 }
+
+.sticky {
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
