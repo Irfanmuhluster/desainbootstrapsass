@@ -5,6 +5,19 @@
 
 // 2. Include any default variable overrides here
 
+$primary: rgba(162, 28, 175);
+
+$theme-colors: (
+    "primary": $primary
+);
+
+// extend color , customyour own color
+$custom-color: (
+    "icon-background": rgba(162, 28, 175, 0.25)
+);
+
+$merge-colors: map-merge($theme-colors , $custom-color );
+
 // 3. Include remainder of required Bootstrap stylesheets
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import "homepages/agenda";
